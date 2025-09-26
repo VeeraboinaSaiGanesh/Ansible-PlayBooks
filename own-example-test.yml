@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  user: ansible
+  become: true
+  connection: ssh
+  tasks:
+
+  - name: Install python on Host Machines
+    action: yum pkg=python3 state=present
+
+   
