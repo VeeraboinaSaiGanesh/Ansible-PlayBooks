@@ -19,6 +19,7 @@
 
   - name: start httpd server on host
     action: service name=httpd start=started
+    ignore_errors: yes
 
   - name: stop httpd server on host
     action: service name=httpd start=stopped
